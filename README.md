@@ -26,7 +26,7 @@ for the year varialbe, a bar chart was also plotted, it looks like that over the
 
 the heatmap of year vs primary_description using color to indicte number of crime was also plotted. Overall, it looks like all the different type of crime decrease over the years, whereas some of the crime type acturally increase slightly, like "THEFT" and "BATTERY". These might serve as important features for predicting label.
 
-4. using ```EDA.R```, variables bar charts and the chi-square test results with label(crime description) were given.
+4.using ```EDA.R```, variables bar charts and the chi-square test results with label(crime description) were given.
 
 other than year and commnity crime which talked above, month, time, beat were investigated. all of them show high correlation to description of crime based on chi-square test.
 
