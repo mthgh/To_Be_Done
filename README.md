@@ -27,3 +27,19 @@ for the year varialbe, a bar chart was also plotted, it looks like that over the
 the heatmap of year vs primary_description using color to indicte number of crime was also plotted. Overall, it looks like all the different type of crime decrease over the years, whereas some of the crime type acturally increase slightly, like "THEFT" and "BATTERY". These might serve as important features for predicting label.
 
 4. using ```EDA.R```, variables bar charts and the chi-square test results with label(crime description) were given.
+
+other than year and commnity crime which talked above, month, time, beat were investigated. all of them show high correlation to description of crime based on chi-square test.
+
+month bar char seems to be very uniform, it looks like that in summer, the number of crime is higher than in winter, that makes sense, since cold weather and snow makes outdoor activity hard. Febrary seems have the least amount of crime, it is probably relate to the total days in Febrary. This feature could be further grouped (winter vs summer) to see the correlation.
+
+time was extract from the database as hour, however, a hour bar chart indictated some patterns (early to midnight, the count of crime is high, in the morning the count of crime is low, etc.), therefore, the hour features were grouped according to the patterns and a new bar chart was shown, which clearly indicated pattern between time and crime count.
+
+beat is a smaller place variable than communityarea. from the bar chart, there are certainly differences between different beat. It would be valuable if they can be combined with communityarea together on the map to show crime patterns.
+
+###Initial EDA summary
+1. "iucr" and "primary_description" are both label variables, the former seems to contain too much detail, and the latter will be better to be used as a label. The latter label was highly skewed, further grouping migh be needed to reduce category.
+2. through the heatmap of communityarea vs primary_description using color to indicte amount of crime, a clear clustering of communityarea and primary_description of crime could be observed (the neighboring communityarea also indicate that they are close together geograpyically).
+3. investigation into year variable show that 2001,2002 and 2016 data were unusual, they might need to be taken special care while doing modeling, the heatmap show that for most type of crimes, the number decrease over the years, while in a few cases, they are acutally increasing in recent years, like "THEFT" and "BATTERY".
+4. month bar chart show summer have more crime then winter, the feature could be further grouped to winter vs summer to see the correlation.
+5. time was extracted from the dataset as hour, they were grouped according to initial hour bar chart. count of crime is high at early to midnight, and low in the morning.
+
