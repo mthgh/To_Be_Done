@@ -50,7 +50,7 @@ sector varchar(10), beat varchar(10),
 beat_num varchar(10)
 );
 
-load data infile "G:/cs/datacamp/challenge 16-10-27/PoliceBeatDec2012.csv"
+load data infile "path/PoliceBeatDec2012.csv"
 ignore
 into table beat_code
 fields terminated by ","
