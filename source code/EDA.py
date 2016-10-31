@@ -5,10 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-db = MySQLdb.connect(host="localhost",    
-                     user="root",         
-                     passwd="1228",  
-                     db="chicago_crime")  
+db = MySQLdb.connect(params)  
 cur = db.cursor()
 
 ############# data exploration ########################################
