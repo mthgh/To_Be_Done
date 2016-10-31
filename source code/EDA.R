@@ -3,8 +3,7 @@
 
 ##### connect to mysql and obtain data
 library(RMySQL)
-db <- dbConnect(MySQL(), user="root", password="1228",
-               dbname="chicago_crime", host="localhost")
+db <- dbConnect(MySQL(), params)
 rs <- dbSendQuery(db, "select * from mfa_t")
 crime_time_place <-fetch(rs, n=-1)
 
